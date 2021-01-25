@@ -11,6 +11,7 @@ export default class EmpDetails extends Component {
         <h2>Emp Details</h2>
         {this.props.deatils.length !== 0 ? (
           <table>
+              <tbody>
             <tr>
               <th>Employee Name</th>
               <td>{this.props.deatils.empname}</td>
@@ -27,9 +28,10 @@ export default class EmpDetails extends Component {
               <th>Location</th>
               <td>{this.props.deatils.address}</td>
             </tr>
+            </tbody>
           </table>
         ) : (
-          <span>Please select emplyee to view details</span>
+          <span>Please select employee to view details</span>
         )}
       </div>
     );
